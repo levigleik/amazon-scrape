@@ -1,0 +1,28 @@
+{
+	"name": "amazon-scrape-back",
+	"version": "1.0.0",
+	"module": "index.ts",
+	"private": true,
+	"scripts": {
+		"build": "bun build ./src/index.ts --target=bun --outdir=./build",
+		"start": "bun run build/index.js",
+		"dev": "bun --watch src/index.ts"
+	},
+	"devDependencies": {
+		"@types/bun": "latest",
+		"@types/jsdom": "^21.1.7"
+	},
+	"peerDependencies": {
+		"typescript": "^5"
+	},
+	"dependencies": {
+		"@types/cors": "^2.8.17",
+		"@types/express": "^5.0.1",
+		"axios": "^1.8.4",
+		"cors": "^2.8.5",
+		"express": "^5.1.0",
+		"jsdom": "^26.1.0",
+		"node-util": "^1.0.0",
+		"puppeteer": "^24.6.1"
+	}
+}
